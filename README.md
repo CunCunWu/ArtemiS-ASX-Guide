@@ -8,8 +8,15 @@
 
 | 模块 | 状态 | 内容 |
 | --- | --- | --- |
-| [ASX 01 Data Access API](ASX01-Data-Access/) | 初版 | HDF/HSVX 的识别、2D、Time Data、3D、元数据、限值及 C#、Python、MATLAB 示例 |
-| ASX 02–ASX 09 | 待补充 | 后续按相同结构逐步建立 |
+| [ASX 01 Data Access API](ASX01-Data-Access/) | 已建立 | HDF/HSVX 数据访问 |
+| [ASX 02 Data Processing and Representation API](ASX02-Data-Processing-Representation/) | 已建立 | 远程控制 ArtemiS SUITE 与 Calculator |
+| [ASX 03 SQala Extension API](ASX03-SQala-Extension/) | 已建立 | 自定义 SQala Step 类型 |
+| [ASX 04 Data Acquisition API](ASX04-Data-Acquisition/) | 已建立 | 远程控制 ArtemiS SUITE Recorder |
+| [ASX 05 Documentation and Metadata API](ASX05-Documentation-Metadata/) | 已建立 | User Documentation、UDI、HATX 模板 |
+| [ASX 06 Data Processing Add-In API](ASX06-Processing-Add-In/) | 已建立 | Filter、Analysis、Post-Analysis、Export Add-In |
+| [ASX 07 Local Processing Service](ASX07-Local-Processing-Service/) | 已建立 | ArtemiSproc 命令行批处理服务 |
+| [ASX 08 Local Recording Service](ASX08-Local-Recording-Service/) | 已建立 | 独立 ArtemiSrec 录音服务 |
+| [ASX 09 Reporting API](ASX09-Reporting/) | 已建立 | 读取、修改、保存和导出 Report |
 
 ## 开始使用
 
@@ -29,4 +36,3 @@
 ## 重要声明
 
 本仓库是社区维护的学习资料，不是 HEAD acoustics 官方文档，也不替代随 ASX 安装的帮助和 Programming Reference。ASX、ArtemiS SUITE 及相关程序集的权利归其各自权利人所有。
-

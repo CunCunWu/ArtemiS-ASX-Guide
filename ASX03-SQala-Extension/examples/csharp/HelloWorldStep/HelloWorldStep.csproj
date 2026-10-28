@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><Configuration Condition="'$(Configuration)'==''">Debug</Configuration><Platform Condition="'$(Platform)'==''">x64</Platform><OutputType>Library</OutputType><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><RootNamespace>HdfAsxGuide.SQala.HelloWorld</RootNamespace><AssemblyName>HdfAsxGuide.SQala.HelloWorld</AssemblyName><ASX_DIR Condition="'$(ASX_DIR)'==''">C:\Program Files\HEAD System Integration and Extension (ASX)</ASX_DIR></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><OutputPath>bin\Debug\</OutputPath><PlatformTarget>x64</PlatformTarget></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><OutputPath>bin\Release\</OutputPath><PlatformTarget>x64</PlatformTarget><Optimize>true</Optimize></PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Xaml"/><Reference Include="WindowsBase"/><Reference Include="PresentationCore"/><Reference Include="PresentationFramework"/><Reference Include="System.ComponentModel.Composition"/><Reference Include="HEADacoustics.API.SQala"><HintPath>$(ASX_DIR)\HEADacoustics.API.SQala.dll</HintPath><Private>false</Private></Reference></ItemGroup>
+  <ItemGroup><Compile Include="HelloWorldFactory.cs"/><Compile Include="HelloWorldStep.cs"/><Compile Include="HelloWorldStepView.xaml.cs"><DependentUpon>HelloWorldStepView.xaml</DependentUpon></Compile><Page Include="HelloWorldStepView.xaml"><Generator>MSBuild:Compile</Generator><SubType>Designer</SubType></Page></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

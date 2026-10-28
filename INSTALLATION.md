@@ -31,6 +31,22 @@ ProductCode.ASX_01_DataAccessAPI
 
 典型许可证错误 `ContainerNotFound` 表示程序已经进入许可证检查，但没有找到可用容器或对应授权。
 
+### ASX 01–09 对照
+
+| 模块 | 正式名称 | 主要入口/程序 | 许可证行为 |
+| --- | --- | --- | --- |
+| ASX 01 | Data Access API | `HEADacoustics.API.Hdf.dll` | 调用方签出 ASX 01 |
+| ASX 02 | Data Processing and Representation API | `HEADacoustics.API.Remote.dll` | 调用方签出 ASX 02 |
+| ASX 03 | SQala Extension API | `HEADacoustics.API.SQala.dll` | 在 SQala/ArtemiS SUITE 中使用 ASX 03 |
+| ASX 04 | Data Acquisition API | Remote Recorder | 调用方签出 ASX 04 |
+| ASX 05 | Documentation and Metadata API | `HEADacoustics.API.Documentation.dll` | 调用方签出 ASX 05 |
+| ASX 06 | Data Processing Add-In API | ArtemiS SUITE Add-In | 项目环境需要 ASX 06；HDF 直接读写通常还需 ASX 01 |
+| ASX 07 | Local Processing Service | `ArtemiSproc.exe` | 服务启动时自动检查 ASX 07；具体分析还需相应分析许可 |
+| ASX 08 | Local Recording Service | `ArtemiSrec.exe` | 服务启动时自动检查 ASX 08；远程控制还需 ASX 04 |
+| ASX 09 | Reporting API | `HEADacoustics.API.Reporting.dll` | 调用方签出 ASX 09 |
+
+ASX 03 和 ASX 06 在当前 `ProductCode` 公共字段中没有像 ASX 01/02/04/05/09 那样的手动签出入口，应遵循各自宿主和项目的许可流程。
+
 ## 3. C# 环境
 
 推荐：
@@ -115,4 +131,3 @@ C:\Program Files\HEAD System Integration and Extension (ASX)\Documentation
 - 离线帮助可打开；
 - 示例输入文件存在；
 - 输出目录可写。
-

@@ -1,0 +1,42 @@
+using System;
+using System.Globalization;
+using System.Threading;
+using System.Threading.Tasks;
+using HEADacoustics.API.License;
+using HEADacoustics.API.Remote;
+using License = HEADacoustics.API.License.License;
+
+public static class RecordForSeconds
+{
+    public static void Main(string[] args)
+    {
+        Run(args).GetAwaiter().GetResult();
+    }
+
+    private static async Task Run(string[] args)
+    {
+        double seconds = args.Length > 0
+            ? double.Parse(args[0], CultureInfo.InvariantCulture)
+            : 3.0;
+        string fileName = args.Length > 1 ? args[1] : "HDF_ASX_Guide_Standalone.hdf";
+
+        using (License.Create(ProductCode.ASX_04_DataAcquisitionAPI))
+        {
+            var remote = ASXRemote.ForLatestApplication(true);
+            if (!remote.StandAloneRecorder.IsAvailable)
+                await remote.StandAloneRecorder.Start();
+
+            var control = remote.StandAloneRecorder.GetRecorderService().GetControlService();
+            control.SetFileNamePattern(fileName);
+            control.StartRecord();
+            try
+            {
+                Thread.Sleep(TimeSpan.FromSeconds(seconds));
+            }
+            finally
+            {
+                control.StopRecord();
+            }
+        }
+    }
+}
