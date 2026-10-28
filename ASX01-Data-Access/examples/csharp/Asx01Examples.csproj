@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{C62A8804-6ECA-49F0-BC51-FC3B31599B75}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HdfAsxGuide.Asx01Examples</RootNamespace>
+    <AssemblyName>Asx01Examples</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <ASX_DIR Condition=" '$(ASX_DIR)' == '' ">C:\Program Files\HEAD System Integration and Extension (ASX)</ASX_DIR>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="HEADacoustics.API.Hdf">
+      <HintPath>$(ASX_DIR)\HEADacoustics.API.Hdf.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HEADacoustics.API.License">
+      <HintPath>$(ASX_DIR)\HEADacoustics.API.License.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HEADacoustics.API.Shared">
+      <HintPath>$(ASX_DIR)\HEADacoustics.API.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
+

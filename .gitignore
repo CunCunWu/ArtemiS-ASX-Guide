@@ -1,0 +1,17 @@
+.vs/
+bin/
+obj/
+__pycache__/
+*.pyc
+*.pyo
+*.user
+*.suo
+*.hdf
+*.hsvx
+*.mat
+*.dll
+*.exe
+*.pdb
+*.log
+output/
+
