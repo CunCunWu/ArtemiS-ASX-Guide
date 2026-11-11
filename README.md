@@ -17,6 +17,7 @@
 | [ASX 07 Local Processing Service](ASX07-Local-Processing-Service/) | 已建立 | ArtemiSproc 命令行批处理服务 |
 | [ASX 08 Local Recording Service](ASX08-Local-Recording-Service/) | 已建立 | 独立 ArtemiSrec 录音服务 |
 | [ASX 09 Reporting API](ASX09-Reporting/) | 已建立 | 读取、修改、保存和导出 Report |
+| [ASX 10 Structural Analysis - Model Updating API](ASX10-Structural-Analysis-Model-Updating/) | 已建立 | 读取几何与振型并计算 MAC 矩阵 |
 
 ## 开始使用
 

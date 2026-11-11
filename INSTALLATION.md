@@ -31,7 +31,7 @@ ProductCode.ASX_01_DataAccessAPI
 
 典型许可证错误 `ContainerNotFound` 表示程序已经进入许可证检查，但没有找到可用容器或对应授权。
 
-### ASX 01–09 对照
+### ASX 01–10 对照
 
 | 模块 | 正式名称 | 主要入口/程序 | 许可证行为 |
 | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ ProductCode.ASX_01_DataAccessAPI
 | ASX 07 | Local Processing Service | `ArtemiSproc.exe` | 服务启动时自动检查 ASX 07；具体分析还需相应分析许可 |
 | ASX 08 | Local Recording Service | `ArtemiSrec.exe` | 服务启动时自动检查 ASX 08；远程控制还需 ASX 04 |
 | ASX 09 | Reporting API | `HEADacoustics.API.Reporting.dll` | 调用方签出 ASX 09 |
+| ASX 10 | Structural Analysis - Model Updating API | `HEADacoustics.API.StructuralAnalysis.ModelUpdating.dll` | 调用方签出 ASX 10；读取振型和计算 MAC 不要求安装 ArtemiS SUITE |
 
 ASX 03 和 ASX 06 在当前 `ProductCode` 公共字段中没有像 ASX 01/02/04/05/09 那样的手动签出入口，应遵循各自宿主和项目的许可流程。
 
@@ -119,6 +120,8 @@ C:\Program Files\HEAD System Integration and Extension (ASX)\Documentation
 - `hdf/integration.html`：HDF Library；
 - `hsvx/integration.html`：HSVX Library；
 - `api/HEADacoustics.API.Hdf.html`：Programming Reference。
+- `api_structuralanalysismodelupdating/integration.html`：ASX 10 概览与示例；
+- `api/HEADacoustics.API.StructuralAnalysis.ModelUpdating.html`：ASX 10 Programming Reference。
 
 接口签名和版本差异以当前机器所安装版本的 Programming Reference 为准。
 
