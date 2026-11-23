@@ -11,4 +11,4 @@ description: Start and control the standalone ArtemiSrec recording host.
 
 ## Sources
 
-Use the guide module `ASX08-Local-Recording-Service/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide) first.
+Use the guide module `ASX08-Local-Recording-Service/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide) first.

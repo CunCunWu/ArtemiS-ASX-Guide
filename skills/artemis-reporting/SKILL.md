@@ -11,4 +11,4 @@ description: Modify HRPX report sources or export PDF and PowerPoint using the o
 
 ## Sources
 
-Use the guide module `ASX09-Reporting/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide) first.
+Use the guide module `ASX09-Reporting/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide) first.

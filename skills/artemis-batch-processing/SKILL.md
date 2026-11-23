@@ -11,4 +11,4 @@ description: Run and troubleshoot unattended HPSX processing using ArtemiSproc.e
 
 ## Sources
 
-Use the guide module `ASX07-Local-Processing-Service/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide) first.
+Use the guide module `ASX07-Local-Processing-Service/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide) first.

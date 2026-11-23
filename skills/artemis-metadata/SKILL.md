@@ -11,4 +11,4 @@ description: Read or write ArtemiS User Documentation, legacy UDI, or HATX templ
 
 ## Sources
 
-Use the guide module `ASX05-Documentation-Metadata/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide) first.
+Use the guide module `ASX05-Documentation-Metadata/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide) first.

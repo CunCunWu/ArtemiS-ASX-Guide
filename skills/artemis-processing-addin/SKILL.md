@@ -12,7 +12,7 @@ Create or edit an ASX 06 Processing Add-In without breaking its ArtemiS SUITE da
 1. Identify the installed ASX and ArtemiS SUITE versions and the target architecture.
 2. Treat the installed Programming Reference and official examples as the authority. Use repository documentation as an explanation layer, not as a replacement.
 3. Inspect the existing source, project files, configuration, deployment layout, Add-In property settings, sample input, expected output, and known-good release before editing.
-4. Read the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide)'s `INSTALLATION.md` and the relevant pages under `ASX06-Processing-Add-In/` before changing code. For a separately installed skill, use a local guide checkout or the linked repository.
+4. Read the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide)'s `INSTALLATION.md` and the relevant pages under `ASX06-Processing-Add-In/` before changing code. For a separately installed skill, use a local guide checkout or the linked repository.
 5. Do not copy, download, commit, or redistribute vendor DLLs, license material, or customer measurement data. Reference assemblies from the user's licensed local installation.
 
 ## Route the task

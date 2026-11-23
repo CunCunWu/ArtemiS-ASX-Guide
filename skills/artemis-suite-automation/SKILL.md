@@ -11,4 +11,4 @@ description: Control ArtemiS SUITE projects, documents, or the Calculator throug
 
 ## Sources
 
-Use the guide module `ASX02-Data-Processing-Representation/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/HDF-ASX-Guide) first.
+Use the guide module `ASX02-Data-Processing-Representation/` for its README, workflows, and language examples. Check signatures against the installed Programming Reference. For environment setup, use the guide's `INSTALLATION.md`. If the skill is installed separately, locate the [ASX guide](https://github.com/CunCunWu/ArtemiS-ASX-Guide) first.
