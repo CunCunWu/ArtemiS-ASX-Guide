@@ -1,0 +1,8 @@
+interface:
+  display_name: "ArtemiS Processing Add-In"
+  short_description: "创建、修改并验证 ASX 06 Processing Add-In"
+  brand_color: "#00A884"
+  default_prompt: "Use $artemis-processing-addin to inspect and safely modify this ArtemiS SUITE Processing Add-In."
+
+policy:
+  allow_implicit_invocation: true

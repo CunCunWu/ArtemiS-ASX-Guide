@@ -26,6 +26,12 @@
 3. 先阅读模块的功能边界和数据模型，再选择对应语言示例。
 4. 使用本机合法 ASX 安装附带的 DLL、许可证和测试数据运行示例。
 
+## 面向编码智能体的 Skill
+
+- [ASX 总入口 Skill](skills/artemis-asx/SKILL.md) 根据任务选择 ASX 模块，并指导跨模块工作流。
+- [ASX 01–10 模块 Skill 索引](skills/artemis-asx/references/module-map.md) 提供各模块的入口、操作要点和验收方式。
+- [Skill 安装与调用](skills/SHARING.md) 提供 Codex、Claude Code 和其他 Agent 可直接使用的示例。
+
 ## 仓库原则
 
 - 不提交 HEAD acoustics 的 DLL、许可证文件或受限二进制资源。
